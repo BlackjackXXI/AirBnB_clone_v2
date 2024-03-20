@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """user update"""
+from models.base_model import BaseModel, Base
 from sqlalchemy import Column, String
 from sqlalchemy.orm import relationship
-from models.base_model import BaseModel, Base
- 
+
 class User(BaseModel, Base):
     """ This class represents a user with the following attributes:
     email, password, name and last name
